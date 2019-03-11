@@ -124,5 +124,15 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
 
     font-family: ${app.font.family}, -apple-system, BlinkMacSystemFont, sans-serif;
+
+    & #fp-nav li a span {
+      background-color: ${colors.primary};
+      color: ${colors.primary}
+    }
+
+    & .fp-slidesNav li a span {
+      background-color: ${colors.secondary};
+      color: ${colors.secondary}
+    }
   }
 `;

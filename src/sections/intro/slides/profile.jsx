@@ -10,7 +10,7 @@ import Button from '../../../components/Button';
 
 import Man from '../../../../static/man.png';
 import Woman from '../../../../static/woman.png';
-import Genderless from '../../../../static/genderless.jpg';
+import Genderless from '../../../../static/genderless.png';
 
 
 const Container = styled.div`
@@ -18,8 +18,8 @@ const Container = styled.div`
 
   display: grid;
   grid-template-columns: 2fr 5fr;
-  grid-template-rows: 1fr 4fr;
-  grid-row-gap: 2em;
+  grid-template-rows: 1fr 6fr;
+  grid-row-gap: 1em;
   grid-template-areas:
     'heading heading'
     'image text';
@@ -77,9 +77,6 @@ export default () => {
 
   const updateName = name => dispatch({ type: 'UPDATE_NAME', name });
   const updateGender = gender => dispatch({ type: 'UPDATE_GENDER', gender });
-
-  console.log(userName, userGender);
-
 
   return (
     <SlideWrapper>

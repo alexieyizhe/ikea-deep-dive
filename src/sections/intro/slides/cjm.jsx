@@ -39,6 +39,10 @@ const EventContainer = styled.div`
   flex-direction: row;
   justify-content: space-around;
 
+  & div.popup {
+    width: auto !important;
+    padding: 1em !important;
+  }
 
 `;
 
@@ -90,6 +94,16 @@ const ToggleContainer = styled.div`
   }
 `;
 
+const Channel = styled.div`
+  width: 2em;
+  height: 1.5em;
+
+  display: inline-flex;
+  & > * {
+    margin: auto;
+  }
+`;
+
 
 const popupContentStyle = {
   border: 'none'
@@ -119,6 +133,7 @@ export default () => {
                   onMouseLeave={() => toggleHovering(false)}
                 >
                   <Popup
+                    className='popup'
                     trigger={
                       <Event
                         className={`event ${hovering ? 'oneHovered' : ''}`}
@@ -127,7 +142,7 @@ export default () => {
 
                       />
                     }
-                    position={(event.happiness || (showBest ? event.best.happiness : event.worst.happiness) > 40) ? 'bottom' : 'left bottom'}
+                    position={(event.happiness || (showBest ? event.best.happiness : event.worst.happiness) > 40) ? 'bottom' : 'top'}
                     contentStyle={popupContentStyle}
                     arrowStyle={popupArrowStyle}
                     on="hover"
@@ -150,7 +165,9 @@ export default () => {
 
                       <span style={{gridArea: 'channels'}}>
                         {event.channels.map(item => (
-                          <FontAwesomeIcon icon={item} size='lg' />
+                          <Channel>
+                            <FontAwesomeIcon icon={item} size='lg' />
+                          </Channel>
                         ))}
                       </span>
 
@@ -164,9 +181,9 @@ export default () => {
           </Phase>
         ))}
       </MapContainer>
+      {/* TODO; add legend */}
       <ToggleContainer>
         <Button backgroundColor='secondary' onClickHandler={() => toggleShowBest(prev => !prev)} label={showBest ? 'Show Worst Case' : 'Show Best Case'} />
-
       </ToggleContainer>
     </SlideWrapper>
   );

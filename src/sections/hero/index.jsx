@@ -28,7 +28,7 @@ export default () => {
   const [ showSub, updateShowSub ] = useState(false);
 
   useEffect(() => {
-    const subTimer = setTimeout(() => updateShowSub(true), 5000);
+    const subTimer = setTimeout(() => updateShowSub(true), 4000);
 
     return () => clearTimeout(subTimer);
   })
