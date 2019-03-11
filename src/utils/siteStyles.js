@@ -1,4 +1,39 @@
 import { css, createGlobalStyle } from 'styled-components';
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  faLightbulb,
+  faExclamation,
+  faTimes,
+  faCheck,
+  faDoorClosed,
+  faDoorOpen,
+  faQuestion,
+  faChevronUp,
+  faChevronDown,
+  faChevronCircleLeft,
+  faTrophy,
+  faMars,
+  faVenus,
+  faGenderless
+} from "@fortawesome/free-solid-svg-icons";
+
+
+library.add(
+  faLightbulb,
+  faExclamation,
+  faTimes,
+  faCheck,
+  faDoorClosed,
+  faDoorOpen,
+  faQuestion,
+  faChevronUp,
+  faChevronDown,
+  faChevronCircleLeft,
+  faTrophy,
+  faMars,
+  faVenus,
+  faGenderless
+);
 
 export const displaySizes = {
   desktop: 2160,

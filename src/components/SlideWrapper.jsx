@@ -11,11 +11,16 @@ const Container = styled.div`
   }
 `;
 
+const InnerContents = styled.div`
+  width: 80vw;
+  margin: auto;
+`;
+
 
 export default ({ className, children }) => (
   <Container className={`${className || ''} slide`}>
-    <div>
+    <InnerContents>
       {children}
-    </div>
+    </InnerContents>
   </Container>
 );
