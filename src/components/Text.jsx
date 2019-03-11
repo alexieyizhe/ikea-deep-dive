@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 
 const Text = styled.p`
-  display: inline-block;
+  display: ${props => props.inline ? 'inline' : 'inline-block'};
 
   color: ${props =>
-    props.theme.colors[props.color] || props.color || props.theme.colors.lightBlack};
+    props.theme.colors[props.color] || props.color};
   font-size: ${props => props.theme.sizes.bodyText[props.size] || props.size || props.theme.sizes.bodyText.normal};
   font-weight: ${props => props.theme.app.font.weight[props.weight] || props.theme.app.font.weight.normal};
 `;

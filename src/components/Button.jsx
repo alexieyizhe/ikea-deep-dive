@@ -10,13 +10,12 @@ const Button = styled.button`
   font-size: 100%;
   color: ${props => props.theme.colors[props.color] || props.color};
   background-color: ${props => props.theme.colors[props.backgroundColor] || props.backgroundColor};
+  border-bottom: 5px solid ${props => props.theme.colors[`dark${props.backgroundColor}`] || 'grey'};
+	text-shadow: 0px -1px ${props => props.theme.colors[`dark${props.backgroundColor}`] || 'grey'};
 
-  border: none;
-  
-  will-change: filter;
-  transition: filter 250ms ease-in-out;
-  &:hover {
-    filter: brightness(110%);
+  &:active {
+    transform: translate(0px,4px);
+  	border-bottom: 1px solid ${props => props.theme.colors[`dark${props.backgroundColor}`] || 'grey'};
   }
 
   // remove annoying blue Chrome outline when focused

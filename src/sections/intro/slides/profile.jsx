@@ -14,7 +14,7 @@ import Genderless from '../../../../static/genderless.jpg';
 
 
 const Container = styled.div`
-  height: 45vh;
+  height: 80vh;
 
   display: grid;
   grid-template-columns: 2fr 5fr;
@@ -36,6 +36,8 @@ const ProfileDesc = styled.div`
 const ProfileImg = styled.img`
   grid-area: image;
 
+  align-self: center;
+
   max-width: 100%;
   max-height: 100%;
 `;
@@ -47,6 +49,26 @@ const ProfileInput = styled(TextInput)`
 
 const ProfileButton = styled(Button)`
   margin-right: 1em;
+`;
+
+const ProfileLegend = styled.div`
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`;
+
+const LegendItem = styled.div`
+  display: flex;
+
+  & > span {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin: auto 0.5em auto 0;
+    border-radius: 50%;
+    background-color: ${props => props.theme.colors[props.color] || props.color};
+  };
 `;
 
 
@@ -84,10 +106,82 @@ export default () => {
             <ProfileButton backgroundColor='primary' onClickHandler={() => updateGender('other')} label='Other' icon='genderless' />
           </div>
 
-          <Text size='big'>
-            {`Today, ${userName} is looking to buy a couch at IKEA.`}
+          <br />
+
+          <Text size='big' inline>
+            Currently, {userName} is{' '}
+          </Text>
+          <Text size='big' color='primary' inline>
+            looking to buy a couch{' '}
+          </Text>
+          <Text size='big' inline>
+            since they're moving into a new bachelor's apartment. They're 23 years old, working an entry-level job like most other young adults, and{' '}
+          </Text>
+          <Text size='big' inline color='red'>have restrictions on the modifications and space{' '}
+          </Text>
+          <Text size='big' inline>
+            in their rented apartment.{' '}
+          </Text>
+          <br /><br />
+          <Text size='big' inline>
+            Even so, {userName} really{' '}
+          </Text>
+          <Text size='big' color='green' inline>
+            wants to have furniture that has a mid-century modern design{' '}
+          </Text>
+          <Text size='big' inline>
+            as that's their favourite style, and they{' '}
+          </Text>
+          <Text size='big' color='green' inline>
+            want the furniture to mesh well together.{' '}
+          </Text>
+          <Text size='big' inline>
+            Since they're going to be{' '}
+          </Text>
+          <Text size='big' color='primary' inline>
+            furnishing the rest of the apartment{' '}
+          </Text>
+          <Text size='big' inline>
+            as well, they're open to{' '}
+          </Text>
+          <Text size='big' color='green' inline>
+            shopping for matching items{' '}
+          </Text>
+          <Text size='big' inline>
+            if they come up.{' '}
+          </Text>
+          <Text size='big' inline>
+            However, they have to{' '}
+          </Text>
+          <Text size='big' color='red' inline>
+            stay on a strict budget{' '}
+          </Text>
+          <Text size='big' inline>
+            first and foremost to guarantee they can properly furnish their apartment completely.
           </Text>
 
+          <br />
+
+          <ProfileLegend>
+            <LegendItem color='primary'>
+              <span />
+              <Text size='big' color='primary' inline>
+                Jobs
+              </Text>
+            </LegendItem>
+            <LegendItem color='red'>
+              <span />
+              <Text size='big' color='red' inline>
+                Pains
+              </Text>
+            </LegendItem>
+            <LegendItem color='green'>
+              <span />
+              <Text size='big' color='green' inline>
+                Gains
+              </Text>
+            </LegendItem>
+          </ProfileLegend>
         </ProfileDesc>
 
       </Container>

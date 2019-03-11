@@ -2,13 +2,15 @@
 
 # Reflection Paper
 
-##Landing Page
+##Intro Page
 
-#### Intro to IKEA
+#### Short Blurb Intro
 
-#### Customer Journey Profile
+#### Customer Profile
 
 #### Customer Journey Map
+
+## Entrance Page
 
 #### Offering Choice
 

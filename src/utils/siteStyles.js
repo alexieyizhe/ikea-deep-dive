@@ -14,7 +14,15 @@ import {
   faTrophy,
   faMars,
   faVenus,
-  faGenderless
+  faGenderless,
+  faCompressArrowsAlt,
+  faHandsHelping,
+  faLocationArrow,
+  faAd,
+  faDolly,
+  faStore,
+  faHeadset,
+  faMobileAlt
 } from "@fortawesome/free-solid-svg-icons";
 
 
@@ -32,7 +40,15 @@ library.add(
   faTrophy,
   faMars,
   faVenus,
-  faGenderless
+  faGenderless,
+  faCompressArrowsAlt,
+  faHandsHelping,
+  faLocationArrow,
+  faAd,
+  faDolly,
+  faStore,
+  faHeadset,
+  faMobileAlt
 );
 
 export const displaySizes = {
@@ -55,6 +71,9 @@ export const mediaSize = Object.keys(displaySizes).reduce((acc, label) => {
 export const colors = {
   primary: '#094ea7',
   secondary: '#edc809',
+
+  darkprimary: '#04316b',
+  darksecondary: '#c9a900'
 };
 
 export const sizes = {
