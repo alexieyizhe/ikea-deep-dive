@@ -8,6 +8,14 @@ import Button from '../../../components/Button';
 const IntroText = styled(Text)`
   text-align: justify;
   line-height: 1.5;
+
+  & u {
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
 `;
 
 const IntroButton = styled.div`

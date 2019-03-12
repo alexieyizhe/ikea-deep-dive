@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import styled from 'styled-components';
 import SiteContext from '../../../utils/siteContext';
 
@@ -29,6 +29,13 @@ export default ({ fullpageApi }) => {
     dispatch({ type: 'UPDATE_GENDER', gender });
     fullpageApi.moveSlideRight();
   };
+
+  useEffect(() => {
+    console.log('section', fullpageApi && fullpageApi.getActiveSection() && fullpageApi.getActiveSection().index);
+    console.log('slide', fullpageApi && fullpageApi.getActiveSlide() && fullpageApi.getActiveSlide().index);
+  }, [fullpageApi]);
+
+
 
   return (
     <SlideWrapper>

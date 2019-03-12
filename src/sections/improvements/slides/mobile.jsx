@@ -7,11 +7,12 @@ import Display from '../../../components/Display';
 import Text from '../../../components/Text';
 import TextReveal from '../../../components/TextReveal';
 
-import Broken from '../../../../static/broken.jpg';
+import Broken from '../../../../static/broken.png';
 
 
 const ParaText = styled(Text)`
   line-height: 1.5;
+  color: rgb(42, 42, 42);
 `;
 
 

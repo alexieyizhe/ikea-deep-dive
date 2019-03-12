@@ -2,7 +2,17 @@ import React, { createContext, useReducer } from "react";
 
 const INITIAL_CONTEXT_STATE = {
   userName: 'Our customer',
-  userGender: 'genderless'
+  userGender: 'genderless',
+  curSlide: [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+  ]
 };
 
 const reducer = (state, action) => {
@@ -17,10 +27,26 @@ const reducer = (state, action) => {
       };
 
     case "UPDATE_GENDER":
-    return {
-      ...state,
-      userGender: action.gender
-    };
+      return {
+        ...state,
+        userGender: action.gender
+      };
+
+    case "UPDATE_COLOR":
+      return {
+        ...state,
+        bgColor: action.color
+      }
+
+    case "UPDATE_CURSLIDE": {
+      const newState = {
+        ...state
+      };
+      newState.curSlide[action.section] = action.slide;
+      
+      return newState;
+    }
+
 
     default:
       return state;

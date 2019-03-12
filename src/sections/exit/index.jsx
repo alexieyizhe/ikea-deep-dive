@@ -16,6 +16,13 @@ const Container = styled.div`
   & > * {
     margin: auto;
   }
+
+  & a {
+    color: inherit;
+    &:hover {
+      text-decoration: none;
+    }
+  }
 `;
 
 const ParaText = styled(Text)`

@@ -34,7 +34,7 @@ export default () => {
   })
 
   return (
-    <PageWrapper backgroundColor='white'>
+    <PageWrapper>
       <Container>
         <Img data-src={LogoAnimation} />
         <HeroHeading size='big' weight='700' color='primary' show={showSub}>A Customer Experience Journey</HeroHeading>

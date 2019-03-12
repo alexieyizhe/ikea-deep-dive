@@ -13,6 +13,7 @@ const GlitchBox = styled.div`
   font-size: ${props => `${props.size}em`};
   background: white;
   text-shadow: 0 1px #0DFF0F;
+  display: inline-block;
 
 
   @keyframes glitch-anim-1 {

@@ -42,7 +42,84 @@ export const statCounters = [
   }
 ];
 
-
+export const sectionBgColors = [
+  {
+    sectionDots: 'primary',
+    slideDots: 'secondary',
+    slideColors: [
+      'white'
+    ]
+  },
+  {
+    sectionDots: 'white',
+    slideDots: 'primary',
+    slideColors: [
+      'white',
+      'white',
+      '#8bf7a8',
+      'white',
+    ]
+  },
+  {
+    sectionDots: 'secondary',
+    slideDots: 'primary',
+    slideColors: [
+      '#e872a9',
+      '#64de86',
+      '#white',
+    ]
+  },
+  {
+    sectionDots: 'secondary',
+    slideDots: 'primary',
+    slideColors: [
+      '#64de86',
+      '#white',
+      '#b7cdd0',
+      '#ece9a7',
+      '#4f228a'
+    ]
+  },
+  {
+    sectionDots: 'black',
+    slideDots: 'primary',
+    slideColors: [
+      'white',
+      'white',
+      '#99d2fb',
+      '#f09655'
+    ]
+  },
+  {
+    sectionDots: 'secondary',
+    slideDots: 'black',
+    slideColors: [
+      '#72dae8',
+      '#f0abab',
+      'linear-gradient(to right, rgba(231,219,183,1) 0%, rgba(231,219,183,1) 12%, rgba(211,192,163,1) 27%, rgba(211,192,163,1) 100%)',
+      '#e2e5e5',
+      '#e7e263',
+    ]
+  },
+  {
+    sectionDots: 'secondary',
+    slideDots: 'black',
+    slideColors: [
+      '#72dae8',
+      '#51b4c0',
+      '#4eabf8',
+      '#72dae8',
+      '#e4d4d3',
+    ]
+  },
+  {
+    sectionDots: 'secondary',
+    slideDots: 'black',
+    slideColors: [
+      '#e5f0f2',
+    ]
+  }
+];
 
 export const cjmData = [
   {

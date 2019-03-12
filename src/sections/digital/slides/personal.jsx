@@ -8,6 +8,14 @@ import TextReveal from '../../../components/TextReveal';
 
 const ParaText = styled(Text)`
   position: relative;
+  color: rgb(0, 0, 0);
+
+  & a {
+    color: inherit;
+    &:hover {
+      text-decoration: none;
+    }
+  }
 `;
 
 const ColorText = styled.span`

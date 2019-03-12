@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const Container = styled.span`
   display: inline-grid;
+  height: 1em;
   cursor: ${props => props.revealed ? 'auto' : 'pointer'};
   max-width: ${props => props.revealed ? '15em' : '1em'};
   transition: max-width 450ms ease-in-out;

@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Button = styled.button`
   cursor: pointer;
   padding: ${props => props.theme.app.container.padding};
+  border: none;
   border-radius: ${props => props.theme.app.border.radius};
 
   font-size: 100%;
