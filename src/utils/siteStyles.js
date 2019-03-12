@@ -22,7 +22,8 @@ import {
   faDolly,
   faStore,
   faHeadset,
-  faMobileAlt
+  faMobileAlt,
+  faHandPointRight
 } from "@fortawesome/free-solid-svg-icons";
 
 
@@ -48,7 +49,8 @@ library.add(
   faDolly,
   faStore,
   faHeadset,
-  faMobileAlt
+  faMobileAlt,
+  faHandPointRight
 );
 
 export const displaySizes = {
@@ -83,8 +85,8 @@ export const sizes = {
     small: '1.5em'
   },
   bodyText: {
-    big: '1.2em',
-    normal: '1em',
+    big: '1.4em',
+    normal: '1.1em',
     small: '0.8em',
     tiny: '0.5em'
   }
@@ -124,6 +126,7 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
 
     font-family: ${app.font.family}, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: ${app.font.weight.bold};
 
     & #fp-nav li a span {
       background-color: ${colors.primary};

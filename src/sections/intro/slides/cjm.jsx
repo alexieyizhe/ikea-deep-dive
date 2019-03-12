@@ -55,7 +55,7 @@ const Event = styled.div`
 
   transform: translateY(${props => `${70 - props.happiness}vh`});
 
-  transition: opacity 250ms ease-in-out, transform 500ms ease-in-out;
+  transition: opacity 250ms ease-in-out, transform 500ms ease-in-out, background-color 500ms ease-in-out;
   &.oneHovered {
     opacity: 0.5;
   }
@@ -157,7 +157,7 @@ export default () => {
                       <span style={{gridArea: 'touchpoints'}}>
                         {event.touchpoints.map(item => (
                           <div>
-                            <FontAwesomeIcon icon='hands-helping' size='xs' />
+                            <FontAwesomeIcon icon='hand-point-right' size='xs' />
                             <span style={{paddingLeft: '0.5em'}}>{item}</span>
                           </div>
                         ))}

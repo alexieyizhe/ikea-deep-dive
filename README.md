@@ -25,3 +25,7 @@ I'm not well versed in the world of animation, although I do love creating visua
   - https://dribbble.com/shots/4551446-Animated-Isometric-Living-Room
   - https://dribbble.com/shots/3764791-Isometric-Room-1-Dribbble-Bedroom
   - https://dribbble.com/shots/5499707-isometric-3d-room
+
+## References
+  - https://www.smartcompany.com.au/industries/retail/ikea-global-chief-designer-reveals-why-furniture-giant-stores-are-mazes/
+  - https://www.washingtonpost.com/news/business/wp/2018/01/28/ikea-has-changed-the-way-we-think-about-furniture/?noredirect=on&utm_term=.b01930c5f59f

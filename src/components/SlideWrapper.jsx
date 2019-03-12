@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
+  position: relative;
+  
   & .fp-tableCell {
     display: flex;
 

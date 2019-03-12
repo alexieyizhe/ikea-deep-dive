@@ -4,8 +4,14 @@ export const cjmData = [
     events: [
       {
         title: 'Search for couches',
-        happiness: 40,
-        color: '#cadf60',
+        best: {
+          happiness: 42,
+          color: '#b6df60',
+        },
+        worst: {
+          happiness: 39,
+          color: '#cadf60',
+        },
         touchpoints: [
           'Visit website',
           'Browse IKEA catalogue',
@@ -37,8 +43,14 @@ export const cjmData = [
       },
       {
         title: 'Consider location & visual fit',
-        happiness: 55,
-        color: '#87da3e',
+        best: {
+          happiness: 55,
+          color: '#87da3e',
+        },
+        worst: {
+          happiness: 54,
+          color: '#93dd52',
+        },
         touchpoints: [
           'Visualize in apartment',
           'Use IKEA online planner',
@@ -73,8 +85,14 @@ export const cjmData = [
       },
       {
         title: 'Browse store',
-        happiness: 57,
-        color: '#58c442',
+        best: {
+          happiness: 57,
+          color: '#58c442',
+        },
+        worst: {
+          happiness: 56,
+          color: '#93da5c',
+        },
         touchpoints: [
           'Walk through store',
           'Interact with rooms/furniture',
@@ -88,8 +106,14 @@ export const cjmData = [
       },
       {
         title: 'Use store services',
-        happiness: 60,
-        color: '#4fba3a',
+        best: {
+          happiness: 60,
+          color: '#4fba3a',
+        },
+        worst: {
+          happiness: 54,
+          color: '#77d465',
+        },
         touchpoints: [
           'Talk with employees',
           'Eat at restaurant!',
@@ -189,8 +213,14 @@ export const cjmData = [
     events: [
       {
         title: 'Use couch',
-        happiness: 57,
-        color: '#6db63a',
+        best: {
+          happiness: 57,
+          color: '#6db63a',
+        },
+        worst: {
+          happiness: 56,
+          color: '#86c958',
+        },
         touchpoints: [
           'Stress test',
           'Normal wear and tear',
@@ -246,7 +276,7 @@ export const cjmData = [
         },
         worst: {
           happiness: 29,
-          color: '#ceeb6d',
+          color: '#e7eb42',
         },
         touchpoints: [
           'Write review',
@@ -265,12 +295,23 @@ export const cjmData = [
 
 export const introData = [
   `
-    The mere mention of IKEA brings with it fond memories of strolling through halls of perfectly decorated rooms, marvelling at their meticulous design.
-    It conjures up elegant and sleek design, but not at the expensive of price.
-    On top of that, who can forget their amazing food options - not just for a furniture store, but on the calibre of restaurants?
+    IKEA has been able to capture the idea of offering affordability and modern design, while operating on a philosophy of sustainability and environmental awareness.
   `,
-  `
-  IKEA has been able to capture the idea of offering affordability and modern design, while operating on a philosophy of sustainability and environmental awareness.
-  My aim with this interactive paper is to explore the nuances of IKEA's operating model through the experience of a customer.
-  `
+  `My aim with this interactive paper is to explore the nuances of IKEA's operating model through the experience of a customer.`
+];
+
+
+export const historyData = [
+`
+  IKEA is a Swedish home furnishing company known for selling ready-to-assemble furniture. It's the world's largest furniture retainer, with a presence of almost 400 stores spanning 48 countries.
+  They're known for their DIY-style furniture sales and their all-in-one stores that offer services like childcare, meals, and other amenities.
+`
+];
+
+export const physicalData = [
+`
+  IKEA is a Swedish home furnishing company known for selling ready-to-assemble furniture. It's the world's largest furniture retainer, with a presence of almost 400 stores spanning 48 countries.
+  They're known for their DIY-style furniture sales and their all-in-one stores that offer services like childcare, meals, and other amenities.
+`,
+`IKEA has tried to set itself apart through their affordable, well designed furniture, as well as key values like customer loyalty, sustainability, and overall customer experience.`
 ];

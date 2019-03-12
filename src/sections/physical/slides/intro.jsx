@@ -5,7 +5,6 @@ import SiteContext from '../../../utils/siteContext';
 import SlideWrapper from '../../../components/SlideWrapper';
 import Heading from '../../../components/Heading';
 import Text from '../../../components/Text';
-import TextGlitch from '../../../components/TextGlitch';
 
 const IntroText = styled(Text)`
   text-align: center;
@@ -16,7 +15,10 @@ export default () => {
 
   return (
     <SlideWrapper>
-      <TextGlitch text='The Digital Front' size={4} color='black'/>
+      <Text size='3.5em' weight='bold'>Up&nbsp;</Text>
+      <Text size='4em' weight='bold'>Close&nbsp;</Text>
+      <Text size='4.5em' weight='bold'>&&nbsp;</Text>
+      <Text size='5.5em' weight='bold'>Personal</Text>
     </SlideWrapper>
   );
 };

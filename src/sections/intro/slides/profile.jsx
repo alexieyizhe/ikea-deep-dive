@@ -5,8 +5,6 @@ import SiteContext from '../../../utils/siteContext';
 import SlideWrapper from '../../../components/SlideWrapper';
 import Text from '../../../components/Text';
 import Heading from '../../../components/Heading';
-import TextInput from '../../../components/TextInput';
-import Button from '../../../components/Button';
 
 import Man from '../../../../static/man.png';
 import Woman from '../../../../static/woman.png';
@@ -14,7 +12,7 @@ import Genderless from '../../../../static/genderless.png';
 
 
 const Container = styled.div`
-  height: 80vh;
+  height: 70vh;
 
   display: grid;
   grid-template-columns: 2fr 5fr;
@@ -42,15 +40,6 @@ const ProfileImg = styled.img`
   max-height: 100%;
 `;
 
-
-const ProfileInput = styled(TextInput)`
-  width: 70%;
-`;
-
-const ProfileButton = styled(Button)`
-  margin-right: 1em;
-`;
-
 const ProfileLegend = styled.div`
   width: 40%;
   display: flex;
@@ -75,8 +64,7 @@ const LegendItem = styled.div`
 export default () => {
   const { state: { userName, userGender }, dispatch } = useContext(SiteContext);
 
-  const updateName = name => dispatch({ type: 'UPDATE_NAME', name });
-  const updateGender = gender => dispatch({ type: 'UPDATE_GENDER', gender });
+
 
   return (
     <SlideWrapper>
@@ -84,24 +72,6 @@ export default () => {
         <ProfileHeading size='big' weight='700'>Customer Profile</ProfileHeading>
         <ProfileImg src={(userGender === 'male' ? Man : (userGender === 'female' ? Woman : Genderless))} />
         <ProfileDesc>
-
-          <div>
-            <Text size='big'>
-              What's your name?
-            </Text>
-            <br />
-            <ProfileInput outlineColor="primary" placeholder="Jordan" defaultValue={userName !== 'Our customer' ? userName : ''} onChangeHandler={updateName} />
-          </div>
-
-          <div>
-            <Text size='big'>
-              Hi{userName !== 'Our customer' && ` ${userName}`}! What's your gender?
-            </Text>
-            <br />
-            <ProfileButton backgroundColor='primary' onClickHandler={() => updateGender('male')} label='Male' icon='mars' />
-            <ProfileButton backgroundColor='primary' onClickHandler={() => updateGender('female')} label='Female' icon='venus' />
-            <ProfileButton backgroundColor='primary' onClickHandler={() => updateGender('other')} label='Other' icon='genderless' />
-          </div>
 
           <br />
 
