@@ -1,3 +1,49 @@
+export const statCounters = [
+  {
+    start: 0,
+    end: 100,
+    suffix: '%',
+    subtitle: 'Sustainable Cotton',
+    gridArea: 'statAttendees'
+  },
+  {
+    start: 0,
+    end: 73,
+    suffix: '%',
+    subtitle: 'Renewable Energy',
+    gridArea: 'statAttendees'
+  },
+  {
+    start: 0,
+    end: 77,
+    suffix: '%',
+    subtitle: 'Sustainable Wood',
+    gridArea: 'statAttendees'
+  },
+  {
+    start: 0,
+    end: 500,
+    suffix: '+',
+    subtitle: '"Sustainability At Home" Products',
+    gridArea: 'statDuration'
+  },
+  {
+    start: 0,
+    end: 13,
+    suffix: 'm',
+    subtitle: 'dollars saved on transport/year',
+    gridArea: 'statDuration'
+  },
+  {
+    start: 0,
+    end: 9500,
+    subtitle: 'fewer gallons of fuel consumed/year',
+    gridArea: 'statDuration'
+  }
+];
+
+
+
 export const cjmData = [
   {
     title: 'Research',
@@ -291,13 +337,6 @@ export const cjmData = [
       },
     ]
   }
-];
-
-export const introData = [
-  `
-    IKEA has been able to capture the idea of offering affordability and modern design, while operating on a philosophy of sustainability and environmental awareness.
-  `,
-  `My aim with this interactive paper is to explore the nuances of IKEA's operating model through the experience of a customer.`
 ];
 
 

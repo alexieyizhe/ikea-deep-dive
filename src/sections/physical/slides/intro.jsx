@@ -15,10 +15,9 @@ export default () => {
 
   return (
     <SlideWrapper>
-      <Text size='3.5em' weight='bold'>Up&nbsp;</Text>
-      <Text size='4em' weight='bold'>Close&nbsp;</Text>
-      <Text size='4.5em' weight='bold'>&&nbsp;</Text>
-      <Text size='5.5em' weight='bold'>Personal</Text>
+      <Text size='4em' weight='bold'>Let's&nbsp;</Text>
+      <Text size='4.5em' weight='bold'>Get&nbsp;</Text>
+      <Text size='5.5em' weight='bold'>Physical</Text>
     </SlideWrapper>
   );
 };

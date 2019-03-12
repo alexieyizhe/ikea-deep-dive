@@ -42,7 +42,7 @@ export default () => (
               </Helmet>
 
               <Hero />
-              <Intro />
+              <Intro fullpageApi={fullpageApi} />
               <Entrance />
               <Physical />
               <Digital />

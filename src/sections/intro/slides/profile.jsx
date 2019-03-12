@@ -69,7 +69,7 @@ export default () => {
   return (
     <SlideWrapper>
       <Container>
-        <ProfileHeading size='big' weight='700'>Customer Profile</ProfileHeading>
+        <ProfileHeading size='big' weight='700'>{userName}'s Customer Profile</ProfileHeading>
         <ProfileImg src={(userGender === 'male' ? Man : (userGender === 'female' ? Woman : Genderless))} />
         <ProfileDesc>
 
@@ -82,9 +82,9 @@ export default () => {
             looking to buy a couch{' '}
           </Text>
           <Text size='big' inline>
-            since they're moving into a new bachelor's apartment. They're 23 years old, working an entry-level job like most other young adults, and{' '}
+            since they're moving into a new bachelor's apartment. {userName} is 23 years old, working an entry-level job like most other young adults, and{' '}
           </Text>
-          <Text size='big' inline color='red'>have restrictions on the modifications and space{' '}
+          <Text size='big' inline color='red'>has restrictions on the modifications and space{' '}
           </Text>
           <Text size='big' inline>
             in their rented apartment.{' '}

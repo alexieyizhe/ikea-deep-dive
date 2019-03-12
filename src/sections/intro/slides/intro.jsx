@@ -1,56 +1,35 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import { introData } from '../../../utils/siteData';
-import SiteContext from '../../../utils/siteContext';
 
 import SlideWrapper from '../../../components/SlideWrapper';
 import Text from '../../../components/Text';
-import TextInput from '../../../components/TextInput';
 import Button from '../../../components/Button';
 
 const IntroText = styled(Text)`
-  text-align: center;
+  text-align: justify;
+  line-height: 1.5;
 `;
 
-const ProfileInput = styled(TextInput)`
-  width: 70%;
+const IntroButton = styled.div`
+  display: flex;
+  height: 5em;
+
+  & > * {
+    margin: auto;
+  }
 `;
 
-const ProfileButton = styled(Button)`
-  margin-right: 1em;
-`;
+export default ({ fullpageApi }) => (
+  <SlideWrapper>
+    <IntroText size='2em' weight='bold'>
+      My aim with this interactive paper is to explore the nuances of IKEA's operating model through the experience of a customer.
+    </IntroText>
+    <IntroText size='2em' weight='bold'>
+      The paper will cover the three main aspects of IKEA's operations: their <u onClick={() => fullpageApi.moveTo(4)}>physical stores</u>, their <u onClick={() => fullpageApi.moveTo(5)}>online presence</u>, and their <u onClick={() => fullpageApi.moveTo(6)}>philosophy</u> that's enabled them to become the phenomenal furniture store it is today. Afterwards, we'll delve into the <u onClick={() => fullpageApi.moveTo(7)}>improvements</u> that can be made to the IKEA experience.
+    </IntroText>
+    <IntroButton>
+      <Button label='Get Started' backgroundColor='primary' onClickHandler={() => fullpageApi.moveSlideRight()} />
 
-export default () => {
-
-  const { state: { userName, userGender }, dispatch } = useContext(SiteContext);
-
-  const updateName = name => dispatch({ type: 'UPDATE_NAME', name });
-  const updateGender = gender => dispatch({ type: 'UPDATE_GENDER', gender });
-
-  return (
-    <SlideWrapper>
-      {introData.map(p => (
-        <IntroText size='2em'>
-          {p}
-        </IntroText>
-      ))}
-      <div>
-        <Text size='big'>
-          Let's start by getting your name:
-        </Text>
-        <br />
-        <ProfileInput outlineColor="primary" placeholder="Jordan" defaultValue={userName !== 'Our customer' ? userName : ''} onChangeHandler={updateName} />
-      </div>
-
-      <div>
-        <Text size='big'>
-          Hi{userName !== 'Our customer' && ` ${userName}`}! What's your gender?
-        </Text>
-        <br />
-        <ProfileButton backgroundColor='primary' onClickHandler={() => updateGender('male')} label='Male' icon='mars' />
-        <ProfileButton backgroundColor='primary' onClickHandler={() => updateGender('female')} label='Female' icon='venus' />
-        <ProfileButton backgroundColor='primary' onClickHandler={() => updateGender('other')} label='Other' icon='genderless' />
-      </div>
-    </SlideWrapper>
-  );
-};
+    </IntroButton>
+  </SlideWrapper>
+);

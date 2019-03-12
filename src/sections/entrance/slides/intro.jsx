@@ -19,9 +19,6 @@ export default () => {
       <Heading size='4em'>
         Welcome to IKEA, {userName}!
       </Heading>
-      <IntroText size='big' weight='bold'>
-        As you embark on your journey to purchase a couch, we'll touch on the aspects and services that make IKEA the phenomenal furniture store it is.
-      </IntroText>
     </SlideWrapper>
   );
 };

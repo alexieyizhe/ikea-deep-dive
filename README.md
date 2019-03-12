@@ -29,3 +29,7 @@ I'm not well versed in the world of animation, although I do love creating visua
 ## References
   - https://www.smartcompany.com.au/industries/retail/ikea-global-chief-designer-reveals-why-furniture-giant-stores-are-mazes/
   - https://www.washingtonpost.com/news/business/wp/2018/01/28/ikea-has-changed-the-way-we-think-about-furniture/?noredirect=on&utm_term=.b01930c5f59f
+  - https://www.ikea.com/ms/en_CA/pdf/yearly_summary/INGKAGroup_SustainabilitySummaryReport_FY18.pdf
+  - https://nordic.businessinsider.com/a-glorious-future--41-years-ago-billionaire-and-ikea-founder-ingvar-kamprad-published-9-theses-to-define-his-ethos---and-they-reveal-the-culture-that-built-the-worlds-greatest-furniture-empire--
+ - https://www.fastcompany.com/90215773/how-ikea-quietly-tweaks-its-design-around-the-world
+ - https://www.chainalytics.com/ikea-save-millions-packaging-optimization/

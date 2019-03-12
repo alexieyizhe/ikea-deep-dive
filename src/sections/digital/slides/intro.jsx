@@ -7,10 +7,6 @@ import Heading from '../../../components/Heading';
 import Text from '../../../components/Text';
 import TextGlitch from '../../../components/TextGlitch';
 
-const IntroText = styled(Text)`
-  text-align: center;
-`;
-
 
 export default () => {
 
