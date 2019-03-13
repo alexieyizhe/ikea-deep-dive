@@ -31,6 +31,17 @@ export default () => (
             slidesNavigation
             resetSliders
             controlArrows={false}
+            navigationTooltips={[
+              '',
+              'Intro',
+              'Entrance',
+              'Aisle 3: Physical Stores',
+              'Aisle 8b: Digital Channel',
+              'Aisle 22: Philosophy',
+              'Checkout: Improvements',
+              'EXIT',
+            ]}
+            showActiveTooltip
             onLeave={(origin, destination) => {
               // console.log(origin, destination, state);
               dispatch({

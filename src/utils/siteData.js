@@ -22,7 +22,7 @@ export const statCounters = [
   },
   {
     start: 0,
-    end: 500,
+    end: 509,
     suffix: '+',
     subtitle: '"Sustainability At Home" Products',
     gridArea: 'statDuration'
@@ -31,13 +31,13 @@ export const statCounters = [
     start: 0,
     end: 13,
     suffix: 'm',
-    subtitle: 'dollars saved on transport/year',
+    subtitle: 'Dollars saved on transport/year',
     gridArea: 'statDuration'
   },
   {
     start: 0,
-    end: 9500,
-    subtitle: 'fewer gallons of fuel consumed/year',
+    end: 950000,
+    subtitle: 'Gallons of fuel saved/year',
     gridArea: 'statDuration'
   }
 ];
@@ -55,8 +55,8 @@ export const sectionBgColors = [
     slideDots: 'primary',
     slideColors: [
       'white',
+      '#8cc0f7',
       'white',
-      '#8bf7a8',
       'white',
     ]
   },
@@ -64,17 +64,17 @@ export const sectionBgColors = [
     sectionDots: 'secondary',
     slideDots: 'primary',
     slideColors: [
-      '#e872a9',
+      '#72a1e8',
       '#64de86',
-      '#white',
+      'white',
     ]
   },
   {
     sectionDots: 'secondary',
     slideDots: 'primary',
     slideColors: [
-      '#64de86',
-      '#white',
+      '#c1a1e6',
+      'white',
       '#b7cdd0',
       '#ece9a7',
       '#4f228a'
@@ -94,18 +94,18 @@ export const sectionBgColors = [
     sectionDots: 'secondary',
     slideDots: 'black',
     slideColors: [
-      '#72dae8',
+      '#e3a0ce',
       '#f0abab',
       'linear-gradient(to right, rgba(231,219,183,1) 0%, rgba(231,219,183,1) 12%, rgba(211,192,163,1) 27%, rgba(211,192,163,1) 100%)',
       '#e2e5e5',
-      '#e7e263',
+      '#ace678',
     ]
   },
   {
     sectionDots: 'secondary',
     slideDots: 'black',
     slideColors: [
-      '#72dae8',
+      '#a9c6e8',
       '#51b4c0',
       '#4eabf8',
       '#72dae8',

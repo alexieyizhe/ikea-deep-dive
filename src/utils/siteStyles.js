@@ -23,7 +23,21 @@ import {
   faStore,
   faHeadset,
   faMobileAlt,
-  faHandPointRight
+  faHandPointRight,
+  faAngleRight,
+  faCaretRight,
+  faAngleDown,
+  faAngleLeft,
+  faAngleUp,
+  faCaretDown,
+  faCaretLeft,
+  faCaretUp,
+  faArrowRight,
+  faArrowLeft,
+  faArrowUp,
+  faArrowDown,
+  faThumbsDown,
+  faThumbsUp,
 } from "@fortawesome/free-solid-svg-icons";
 
 
@@ -50,7 +64,21 @@ library.add(
   faStore,
   faHeadset,
   faMobileAlt,
-  faHandPointRight
+  faHandPointRight,
+  faAngleRight,
+  faCaretRight,
+  faAngleDown,
+  faAngleLeft,
+  faAngleUp,
+  faCaretDown,
+  faCaretLeft,
+  faCaretUp,
+  faArrowRight,
+  faArrowLeft,
+  faArrowUp,
+  faArrowDown,
+  faThumbsDown,
+  faThumbsUp,
 );
 
 export const displaySizes = {
@@ -103,7 +131,7 @@ export const app = {
   },
   border: {
     width: '2px',
-    radius: '6px'
+    radius: '50px'
   },
   container: {
     padding: '0.8em'
@@ -130,12 +158,29 @@ export const GlobalStyles = createGlobalStyle`
 
     & #fp-nav li a span {
       background-color: ${colors.primary};
-      color: ${colors.primary}
+      color: ${colors.primary};
+    }
+
+    & .fp-tooltip {
+      color: ${colors.primary} !important;
+      font-family: ${app.font.family}, -apple-system, BlinkMacSystemFont, sans-serif !important;
+    }
+
+    & #fp-nav li a.active + .fp-tooltip {
+      overflow: visible;
+
+      &:before {
+        content: '🚶🏻‍';
+        font-size: 1.2em;
+        position: absolute;
+        left: -1.2em;
+        top: -5px;
+      }
     }
 
     & .fp-slidesNav li a span {
       background-color: ${colors.secondary};
-      color: ${colors.secondary}
+      color: ${colors.secondary};
     }
   }
 `;

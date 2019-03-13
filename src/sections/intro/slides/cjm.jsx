@@ -88,6 +88,7 @@ const PhaseContents = styled.div`
 const ToggleContainer = styled.div`
   height: 3em;
   display: flex;
+  position: relative;
 
   & > * {
     margin: auto;
@@ -102,6 +103,12 @@ const Channel = styled.div`
   & > * {
     margin: auto;
   }
+`;
+
+const Legend = styled.div`
+  position: absolute;
+  top: -1em;
+  right: 0;
 `;
 
 
@@ -121,7 +128,7 @@ export default () => {
 
   return (
     <SlideWrapper>
-      <Heading size='big' weight='700'>{`${userName}'s Customer Journey Map`}</Heading>
+      <Heading size='big' weight='700'>{userName !== 'Our customer' ? `${userName}'s ` : ''}Customer Journey Map</Heading>
       <MapContainer>
         {cjmData.map(phase => (
           <Phase className={`phase ${hovering ? 'oneHovered' : ''}`}>
@@ -183,7 +190,15 @@ export default () => {
       </MapContainer>
       {/* TODO; add legend */}
       <ToggleContainer>
-        <Button backgroundColor='secondary' onClickHandler={() => toggleShowBest(prev => !prev)} label={showBest ? 'Show Worst Case' : 'Show Best Case'} />
+        <Legend>
+          <div><FontAwesomeIcon icon='hand-point-right' size='lg'/><span>&nbsp;Touchpoint</span></div>
+          <div><FontAwesomeIcon icon='location-arrow' size='sm'/><span>&nbsp;&nbsp;Channel: Website</span></div>
+          <div><FontAwesomeIcon icon='ad' size='lg'/><span>&nbsp;Channel: Marketing & Social Media</span></div>
+          <div><FontAwesomeIcon icon='store' size='sm'/><span>&nbsp;Channel: Store</span></div>
+          <div><FontAwesomeIcon icon='mobile-alt' size='lg'/><span>&nbsp;&nbsp;Channel: Mobile</span></div>
+          <div><FontAwesomeIcon icon='headset' size='sm'/><span>&nbsp;&nbsp;Channel: Support</span></div>
+        </Legend>
+        <Button color={showBest ? 'rgb(185, 80, 80)' : 'rgb(39, 144, 53)'} fontSize='0.9em' icon={showBest ? 'thumbs-down' : 'thumbs-up'} onClickHandler={() => toggleShowBest(prev => !prev)} label={showBest ? 'Show Worst Case' : 'Show Best Case'} />
       </ToggleContainer>
     </SlideWrapper>
   );

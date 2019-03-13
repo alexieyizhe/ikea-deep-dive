@@ -14,7 +14,7 @@ const TextInput = styled.input`
 
   border-radius: ${props => props.theme.app.border.radius};
   border: ${props =>
-    `2px solid ${props.theme.colors[props.outlineColor] ||
+    `3px solid ${props.theme.colors[props.outlineColor] ||
       props.outlineColor}`};
 
   transition: box-shadow 400ms ease-in-out;

@@ -14,6 +14,7 @@ const IntroText = styled(Text)`
 
 const ProfileInput = styled(TextInput)`
   width: 70%;
+  font-size: 1.2em;
 `;
 
 const ProfileButton = styled(Button)`
@@ -45,7 +46,7 @@ export default ({ fullpageApi }) => {
         </IntroText>
         <br />
         <ProfileInput
-          outlineColor="primary"
+          outlineColor="black"
           placeholder="Jordan"
           defaultValue={userName !== 'Our customer' ? userName : ''}
           onChangeHandler={updateName}
@@ -57,9 +58,9 @@ export default ({ fullpageApi }) => {
           Hi{userName !== 'Our customer' && ` ${userName}`}! What's your gender?
         </IntroText>
         <br />
-        <ProfileButton backgroundColor='primary' onClickHandler={() => updateGender('male')} label='Male' icon='mars' />
-        <ProfileButton backgroundColor='primary' onClickHandler={() => updateGender('female')} label='Female' icon='venus' />
-        <ProfileButton backgroundColor='primary' onClickHandler={() => updateGender('other')} label='Other' icon='genderless' />
+        <ProfileButton backgroundColor='primary' fontSize='1.2em' onClickHandler={() => updateGender('male')} label='Male' icon='mars' />
+        <ProfileButton backgroundColor='primary' fontSize='1.2em' onClickHandler={() => updateGender('female')} label='Female' icon='venus' />
+        <ProfileButton backgroundColor='primary' fontSize='1.2em' onClickHandler={() => updateGender('other')} label='Other' icon='genderless' />
       </div>
     </SlideWrapper>
   );

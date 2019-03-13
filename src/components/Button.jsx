@@ -8,15 +8,13 @@ const Button = styled.button`
   border: none;
   border-radius: ${props => props.theme.app.border.radius};
 
-  font-size: 100%;
-  color: ${props => props.theme.colors[props.color] || props.color};
-  background-color: ${props => props.theme.colors[props.backgroundColor] || props.backgroundColor};
-  border-bottom: 5px solid ${props => props.theme.colors[`dark${props.backgroundColor}`] || 'grey'};
-	text-shadow: 0px -1px ${props => props.theme.colors[`dark${props.backgroundColor}`] || 'grey'};
+  font-size: ${props => props.fontSize};
+  color: ${props => props.theme.colors[props.color] || props.color || 'black'};
+  border: 3px solid ${props => props.theme.colors[props.color] || props.color || 'black'};
 
-  &:active {
-    transform: translate(0px,4px);
-  	border-bottom: 1px solid ${props => props.theme.colors[`dark${props.backgroundColor}`] || 'grey'};
+  transition: transform 200ms ease-in-out;
+  &:hover {
+    transform: scale(1.1);
   }
 
   // remove annoying blue Chrome outline when focused
@@ -25,13 +23,21 @@ const Button = styled.button`
   }
 `;
 
+
+const ButtonIcon = styled(FontAwesomeIcon)`
+  padding-left: ${props => props.left ? '0' : '1em'};
+  padding-right: ${props => props.right ? '0' : '1em'};
+`;
+
 export default ({
   className,
   label,
   icon,
+  iconRight,
   disabled,
-  color = "white",
-  backgroundColor = "black",
+  fontSize,
+  color = "black",
+  backgroundColor = "white",
   type = "button",
   onClickHandler = () => console.log(`clicked ${label} button`)
 }) => (
@@ -42,8 +48,10 @@ export default ({
     color={color}
     backgroundColor={backgroundColor}
     onClick={disabled ? null : onClickHandler}
+    fontSize={fontSize}
   >
-    {icon && <FontAwesomeIcon icon={icon} size='1x' />}
+    {icon && !iconRight && <ButtonIcon left icon={icon} size='1x' />}
     {label && ` ${label}`}
+    {icon && iconRight && <ButtonIcon right icon={icon} size='1x' />}
   </Button>
 );

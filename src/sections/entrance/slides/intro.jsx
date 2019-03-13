@@ -6,8 +6,9 @@ import SlideWrapper from '../../../components/SlideWrapper';
 import Text from '../../../components/Text';
 import Heading from '../../../components/Heading';
 
-const IntroText = styled(Text)`
-  text-align: left;
+const IntroHeading = styled(Heading)`
+  text-align: center;
+  margin: auto;
 `;
 
 
@@ -16,9 +17,9 @@ export default () => {
 
   return (
     <SlideWrapper>
-      <Heading size='4em'>
-        Welcome to IKEA, {userName}!
-      </Heading>
+      <IntroHeading size='4em'>
+        Welcome to IKEA{userName === 'Our customer' ? '' : `, ${userName}`}!
+      </IntroHeading>
     </SlideWrapper>
   );
 };

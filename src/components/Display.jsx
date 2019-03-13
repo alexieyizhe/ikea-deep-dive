@@ -24,7 +24,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
 
-  text-align: ${props => props.right ? 'right' : 'left'};
+  text-align: ${props => props.right ? 'justify' : 'left'};
 `;
 
 const DisplayImg = styled.img`

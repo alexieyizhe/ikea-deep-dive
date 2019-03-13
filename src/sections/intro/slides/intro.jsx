@@ -36,7 +36,7 @@ export default ({ fullpageApi }) => (
       The paper will cover the three main aspects of IKEA's operations: their <u onClick={() => fullpageApi.moveTo(4)}>physical stores</u>, their <u onClick={() => fullpageApi.moveTo(5)}>online presence</u>, and their <u onClick={() => fullpageApi.moveTo(6)}>philosophy</u> that's enabled them to become the phenomenal furniture store it is today. Afterwards, we'll delve into the <u onClick={() => fullpageApi.moveTo(7)}>improvements</u> that can be made to the IKEA experience.
     </IntroText>
     <IntroButton>
-      <Button label='Get Started' backgroundColor='primary' onClickHandler={() => fullpageApi.moveSlideRight()} />
+      <Button label='Get Started' backgroundColor='primary' icon='arrow-right' iconRight fontSize='1.4em' onClickHandler={() => fullpageApi.moveSlideRight()} />
 
     </IntroButton>
   </SlideWrapper>
