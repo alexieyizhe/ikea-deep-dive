@@ -31,7 +31,7 @@ export default () => {
       <ParaText size='big' weight='bold'>
         The mere mention of IKEA brings with it fond memories of strolling through halls of perfectly decorated rooms, marvelling at their meticulous design.
         It conjures up elegant and sleek design, but not at the expensive of price.
-        On top of that, who can forget their amazing food options - not just for a furniture store, but on the calibre of restaurants?
+        On top of that, who can forget their amazing <TextReveal label={<span>🍲</span>} reveal={<span>food options</span>}/> - not just for a furniture store, but on the calibre of restaurants?
       </ParaText>
     </SlideWrapper>
   );

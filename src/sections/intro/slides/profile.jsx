@@ -76,7 +76,7 @@ export default () => {
           <br />
 
           <Text size='big' inline>
-            Currently, {userName} is{' '}
+            Currently, {userName !== 'Our customer' ? userName : 'our customer'} is{' '}
           </Text>
           <Text size='big' color='primary' inline>
             looking to buy a couch{' '}

@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "/bet350-paper",
+  pathPrefix: "/ikea-deep-dive",
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
