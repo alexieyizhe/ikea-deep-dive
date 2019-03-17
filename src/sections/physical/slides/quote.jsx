@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import styled from 'styled-components';
+import Slide from 'react-reveal/Slide';
 import SiteContext from '../../../utils/siteContext';
 
 import SlideWrapper from '../../../components/SlideWrapper';
@@ -42,9 +43,11 @@ export default () => {
 
   return (
     <SlideWrapper>
-      <Quote size='3em' weight='700' color='primary'>
-        “[This design] was about finding a way to get people to want to spend more time in the store, not force them. And not just through prices and promotions, but with <i>inspiration</i>. ”
-      </Quote>
+      <Slide right>
+        <Quote size='3em' weight='700' color='primary'>
+          “[This design] was about finding a way to get people to want to spend more time in the store, not force them. And not just through prices and promotions, but with <i>inspiration</i>. ”
+        </Quote>
+      </Slide>
       <QuoteAuthor size='big' weight={700}>
         {` - Marcus Engman `}
         <br />

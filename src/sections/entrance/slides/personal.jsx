@@ -4,6 +4,7 @@ import SiteContext from '../../../utils/siteContext';
 
 import SlideWrapper from '../../../components/SlideWrapper';
 import Text from '../../../components/Text';
+import TextReveal from '../../../components/TextReveal';
 
 import Logo from '../../../../static/logo.png';
 

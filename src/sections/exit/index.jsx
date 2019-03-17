@@ -38,7 +38,7 @@ export default () => (
         I hope you enjoyed your visit to IKEA!
       </ParaText>
       <ParaText size='1.2em' color='grey' weight='bold'>
-        This paper/site was created with ❤️ and ☕ by <a href='https://alexieyizhe.me' target='_blank'>Alex Xie</a>.
+        Built by <a href='https://alexieyizhe.me' target='_blank'>Alex Xie</a>, with ❤️ and ☕. Source <a href='https://github.com/alexieyizhe/ikea-deep-dive' target='_blank'>here</a>. 
       </ParaText>
     </Container>
   </PageWrapper>

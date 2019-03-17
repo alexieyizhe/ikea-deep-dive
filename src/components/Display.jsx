@@ -1,9 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
 
 import Heading from './Heading';
 
 const Container = styled.div`
+  height: 70vh;
+
   display: grid;
   grid-template-columns: ${props => props.right ?
     `6fr 4fr`
@@ -31,6 +34,7 @@ const DisplayImg = styled.img`
   grid-area: image;
 
   align-self: center;
+  justify-self: center;
 
   max-width: 100%;
   max-height: 100%;
@@ -46,11 +50,14 @@ const Contents = styled.div`
 `;
 
 export default ({ img, title, children, right }) => (
-  <Container hasTitle={title !== undefined} right={right}>
-    <DisplayImg data-src={img} />
-    <DisplayHeading size='big' weight='700'>{title}</DisplayHeading>
-    <Contents>
-      {children}
-    </Contents>
-  </Container>
+  <Fade>
+    <Container hasTitle={title !== undefined} right={right}>
+      <DisplayImg data-src={img} />
+      <DisplayHeading size='big' weight='700'>{title}</DisplayHeading>
+      <Contents>
+        {children}
+      </Contents>
+    </Container>
+  </Fade>
+
 );

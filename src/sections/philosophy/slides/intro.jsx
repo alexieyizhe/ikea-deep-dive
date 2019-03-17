@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import SiteContext from '../../../utils/siteContext';
+import Slide from 'react-reveal/Slide';
+import Zoom from 'react-reveal/Zoom';
 
 import SlideWrapper from '../../../components/SlideWrapper';
 import Heading from '../../../components/Heading';
-import Text from '../../../components/Text';
 
 const IntroHeading1 = styled(Heading)`
   text-align: right;
@@ -27,9 +27,15 @@ export default () => {
 
   return (
     <SlideWrapper>
-      <IntroHeading1 size='4em' weight='bold'>Philosophy</IntroHeading1>
-      <IntroHeading2 size='4em' weight='bold'>&</IntroHeading2>
-      <IntroHeading3 size='4em' weight='bold'>Design</IntroHeading3>
+      <Slide left>
+        <IntroHeading1 size='4em' weight='bold'>Philosophy</IntroHeading1>
+      </Slide>
+      <Zoom>
+        <IntroHeading2 size='4em' weight='bold'>&</IntroHeading2>
+      </Zoom>
+      <Slide right>
+        <IntroHeading3 size='4em' weight='bold'>Design</IntroHeading3>
+      </Slide>
     </SlideWrapper>
   );
 };

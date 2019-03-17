@@ -7,7 +7,7 @@ import LogoAnimation from '../../../static/ikea_logo_anim.gif';
 
 const Container = styled.div`
   width: 75vw;
-  margin: -25vw auto;
+  margin: -25em auto;
 
   display: flex;
   flex-direction: column;

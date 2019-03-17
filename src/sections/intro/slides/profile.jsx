@@ -29,11 +29,14 @@ const ProfileHeading = styled(Heading)`
 
 const ProfileDesc = styled.div`
   grid-area: text;
+  justify-self: center;
+  align-self: center;
 `;
 
 const ProfileImg = styled.img`
   grid-area: image;
 
+  justify-self: center;
   align-self: center;
 
   max-width: 100%;
